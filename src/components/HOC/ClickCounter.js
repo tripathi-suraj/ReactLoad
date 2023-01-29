@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UpdatedComponent from './withHoc';
+import withHoc from './withHoc';
 
 class ClickCounter extends Component {
   render() {
@@ -7,11 +7,11 @@ class ClickCounter extends Component {
     return (
       <div>
         <button className="button" onClick={incrementCount}>
-          Click {count}
+          {this.props.name} Click {count}
         </button>
       </div>
     );
   }
 }
 
-export default UpdatedComponent(ClickCounter);
+export default withHoc(ClickCounter);

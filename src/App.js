@@ -5,7 +5,7 @@ import HoverCounter from './components/HOC/HoverCounter';
 export default function App() {
   return (
     <div>
-      <ClickCounter />
+      <ClickCounter name="Suraj" />
       <HoverCounter />
     </div>
   );

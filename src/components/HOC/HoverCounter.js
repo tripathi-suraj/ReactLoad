@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UpdatedComponent from './withHoc';
+import withHoc from './withHoc';
 
 class HoverCounter extends Component {
   render() {
@@ -7,7 +7,6 @@ class HoverCounter extends Component {
     return (
       <div>
         <h1 className="button" onMouseOver={incrementCount}>
-          {' '}
           Hover Over {count}
         </h1>
       </div>
@@ -15,4 +14,4 @@ class HoverCounter extends Component {
   }
 }
 
-export default UpdatedComponent(HoverCounter);
+export default withHoc(HoverCounter);
