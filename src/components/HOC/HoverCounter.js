@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import UpdatedComponent from './withHoc';
 
-class ClickCounter extends Component {
+class HoverCounter extends Component {
   constructor(props) {
     super(props);
 
@@ -20,12 +20,12 @@ class ClickCounter extends Component {
     const { count } = this.state;
     return (
       <div>
-        <button className="button" onClick={this.incrementCount}>
-          {this.props.name}: Click {count}
-        </button>
+        <h1 className="button" onMouseOver={this.incrementCount}>
+          {this.props.name}: Hover Over {count}
+        </h1>
       </div>
     );
   }
 }
 
-export default UpdatedComponent(ClickCounter);
+export default UpdatedComponent(HoverCounter);
