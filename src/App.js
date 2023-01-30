@@ -1,12 +1,10 @@
 import React from 'react';
+import ClickCounter2 from './components/Rprops/clickCounterTwo';
 import './style.css';
-import ClickCounter from './components/HOC/ClickCounter';
-import HoverCounter from './components/HOC/HoverCounter';
 export default function App() {
   return (
     <div>
-      <ClickCounter name="Suraj" />
-      <HoverCounter />
+      <ClickCounter2 />
     </div>
   );
 }
